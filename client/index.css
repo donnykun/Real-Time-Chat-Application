@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login-page-body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/login-signup-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 15rem;
+}
+
+#login-page-body h1 {
+    color: rgb(230, 230, 230);
+    font-size: 2.8rem;
+}
+
+.login-container {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 6rem;
+    background: rgba(37, 37, 37, 0.568);
+    backdrop-filter: blur(10px);
+}
+
+.register-container {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 6rem;
+    background: rgba(37, 37, 37, 0.568);
+    backdrop-filter: blur(10px);
+}
+
+.login-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.login-inputs input {
+    border: none;
+    border-bottom: 1px solid gray;
+    background: none;
+    padding: 16px;
+    transition: .15s;
+    color: rgb(230, 230, 230);
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.login-inputs input:focus {
+    outline: 1px solid gray;
+    transition: .15s;
+}
+
+.login-inputs input::placeholder {
+    color: rgb(230, 230, 230);
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-button button {
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 8px 40px;
+    background: rgb(56, 56, 56);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .3s;
+    color: rgb(230, 230, 230);
+}
+
+.login-button button:hover {
+    background: rgb(78, 78, 78);
+    transition: .3s;
+}
+
+
+
+
+
