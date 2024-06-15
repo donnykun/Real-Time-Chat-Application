@@ -14,7 +14,9 @@
     background: url(/assets/login-signup-wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    gap: 15rem;
+    background-position: center;
+    gap: 5rem;
+    padding: 10px;
 }
 
 #login-page-body h1 {
@@ -22,7 +24,7 @@
     font-size: 2.8rem;
 }
 
-.login-container {
+.login-container, .register-container {
     border: 1px solid gray;
     border-radius: 5px;
     display: flex;
@@ -30,20 +32,7 @@
     align-items: center;
     flex-direction: column;
     padding: 3rem 2rem;
-    gap: 6rem;
-    background: rgba(37, 37, 37, 0.568);
-    backdrop-filter: blur(10px);
-}
-
-.register-container {
-    border: 1px solid gray;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 2rem;
-    gap: 6rem;
+    gap: 4rem;
     background: rgba(37, 37, 37, 0.568);
     backdrop-filter: blur(10px);
 }
@@ -64,7 +53,7 @@
     transition: .15s;
     color: rgb(230, 230, 230);
     font-size: 1.2rem;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .login-inputs input:focus {
@@ -97,6 +86,123 @@
 .login-button button:hover {
     background: rgb(78, 78, 78);
     transition: .3s;
+}
+
+ /* larger tablets, laptops, smaller desktops */
+@media only screen and (max-width: 1024px) {
+    #login-page-body {
+        gap: 3rem;
+    }
+
+    .login-container, .register-container {
+        padding: 6rem 3rem;
+    }
+
+    .login-inputs input {
+        font-size: 1.6rem;
+    }
+
+    .login-button button {
+        font-size: 2rem;
+        padding: 10px 80px;
+    }
+}
+
+/* regular tablets */
+@media only screen and (max-width: 960px) {
+    #login-page-body {
+        gap: 2rem;
+    }
+
+    #login-page-body h1 {
+        font-size: 2.5rem;
+    }
+
+    .login-container, .register-container {
+        padding: 4rem 2rem;
+    }
+
+    .login-inputs input {
+        font-size: 1.4rem;
+    }
+
+    .login-button button {
+        font-size: 1.7rem;
+        padding: 8px 60px;
+    }
+}
+
+/* smaller tablets */
+@media only screen and (max-width: 768px) {
+    #login-page-body {
+        gap: 1.5rem;
+    }
+
+    .login-container, .register-container {
+        padding: 3rem 1.25rem;
+    }
+}
+
+/* small screens */
+@media only screen and (max-width: 640px) {
+
+}
+
+/* xsmall tablets/phones */
+@media only screen and (max-width: 480px) {
+    #login-page-body {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    #login-page-body h1 {
+        font-size: 2rem;
+    }
+
+    .login-container, .register-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .login-button button {
+        font-size: 1.3rem;
+        padding: 6px 40px;
+    }
+}
+
+/* xsmall phones */
+@media only screen and (max-width: 400px) {
+    #login-page-body h1 {
+        font-size: 2rem;
+    }
+
+    .login-container, .register-container {
+        padding: .75rem .75rem;
+    }
+}
+
+/*xsmall phones */
+@media only screen and (max-width: 375px) {
+    #login-page-body {
+        gap: .3rem;
+    }
+
+    #login-page-body h1 {
+        font-size: 1.75rem;
+    }
+
+    .login-container, .register-container {
+        padding: 1rem 1rem;
+        gap: 2.5rem;
+    }
+
+    .login-inputs input {
+        font-size: 1rem;
+    }
+
+    .login-button button {
+        font-size: 1rem;
+        padding: 6px 40px;
+    }
 }
 
 
