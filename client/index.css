@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--poppinsfont);
 }
 
 :root {
-    --mainbgcolor: rgb(47, 47, 47);
+    --mainbgcolor: rgb(40, 40, 40);
+    --maintextcolor: rgb(196, 196, 196);
+    --mainhovertextcolor: white;
+    --poppinsfont: 'poppins'
 }
 
 /*login and sign up pages*/
@@ -143,22 +147,95 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid aqua;
 }
 
 #chatroom-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     border: 1px solid gray;
     box-shadow: 0 0 40px 0 rgba(49, 49, 49, 0.753);
-    height: 40em;
-    width: 100em;
+    height: 40rem;
+    width: 100rem;
     background: var(--mainbgcolor);
     border-radius: 20px;
+    overflow: hidden;
+}
+
+/*chatroom nav container*/
+#chatroom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    background: rgb(54, 54, 54);
+    padding: 10px;
+    box-shadow: 15px 0 30px 5px #1b1b1b;
+    position: relative;
 }
 
 
+#chatroom-nav a {
+    color: var(--maintextcolor);
+    text-decoration: none;
+    padding: 5px;
+}
+
+#chatroom-nav a:hover {
+    color: var(--mainhovertextcolor);
+}
+
+#chatroom-nav nav {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: var(--maintextcolor);
+    gap: 2rem;
+}
+
+.nav-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#nav-username {
+    font-size: 1.2rem;
+    color: white;
+}
+
+#nav-user-pfp {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.nav-bottom {
+    display: flex;
+    justify-content: center;
+    color: var(--maintextcolor);
+}
+
+/*chat messages container*/
+#chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 70%;
+    height: 100%;
+    background: var(--mainbgcolor);
+    padding: 10px;
+}
 
 
  /* larger tablets, laptops, smaller desktops */
@@ -288,6 +365,14 @@ body {
 }
 
 
+
+
+
+
+@font-face{
+    font-family: 'poppins';
+    src: url(/assets/Poppins-Regular.otf);
+}
 
 
 
