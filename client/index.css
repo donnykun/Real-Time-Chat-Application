@@ -15,12 +15,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    gap: 5rem;
-    padding: 10px;
+    color: rgb(230, 230, 230);
 }
 
 #login-page-body h1 {
-    color: rgb(230, 230, 230);
     font-size: 2.8rem;
 }
 
@@ -32,7 +30,7 @@
     align-items: center;
     flex-direction: column;
     padding: 3rem 2rem;
-    gap: 4rem;
+    gap: 2rem;
     background: rgba(37, 37, 37, 0.568);
     backdrop-filter: blur(10px);
 }
@@ -51,9 +49,9 @@
     background: none;
     padding: 16px;
     transition: .15s;
-    color: rgb(230, 230, 230);
     font-size: 1.2rem;
     border-radius: 2px;
+    color: rgb(230, 230, 230);
 }
 
 .login-inputs input:focus {
@@ -88,10 +86,66 @@
     transition: .3s;
 }
 
+.register-gmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gmail-auth-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgb(56, 56, 56);
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: .3s;
+    font-size: .9rem;
+}
+
+.gmail-auth-div:hover {
+    background: rgb(78, 78, 78);
+    transition: .3s;
+}
+
+.gmail-auth-div img {
+    width: 1.3rem;
+}
+
+.login-container > h4 > a {
+    color: rgb(124, 220, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.register-container > h4 > a {
+    color: rgb(124, 220, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*chat room page*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(47, 47, 47);
+}
+
+
+
+
  /* larger tablets, laptops, smaller desktops */
 @media only screen and (max-width: 1024px) {
-    #login-page-body {
-        gap: 3rem;
+    #login-page-body h1 {
+        font-size: 4rem;
     }
 
     .login-container, .register-container {
@@ -99,12 +153,21 @@
     }
 
     .login-inputs input {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .login-button button {
-        font-size: 2rem;
+        font-size: 1.75rem;
         padding: 10px 80px;
+    }
+
+    .register-gmail {
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+    
+    .gmail-auth-div {
+        font-size: 1.75rem;
     }
 }
 
@@ -148,7 +211,7 @@
 
 }
 
-/* xsmall tablets/phones */
+/* small tablets/phones */
 @media only screen and (max-width: 480px) {
     #login-page-body {
         flex-direction: column;
