@@ -154,9 +154,9 @@ body {
     justify-content: start;
     align-items: center;
     border: 1px solid gray;
-    box-shadow: 0 0 40px 0 rgba(49, 49, 49, 0.753);
-    height: 40rem;
-    width: 100rem;
+    box-shadow: 0 0 20px 10px rgba(16, 16, 16, 0.77);
+    height: 80%;
+    width: 80%;
     background: var(--mainbgcolor);
     border-radius: 20px;
     overflow: hidden;
@@ -176,31 +176,47 @@ body {
     position: relative;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+}
+
+nav a {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
 
 #chatroom-nav a {
     color: var(--maintextcolor);
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
+    transition: .3s;
 }
 
 #chatroom-nav a:hover {
+    transition: .3s;
     color: var(--mainhovertextcolor);
-}
-
-#chatroom-nav nav {
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 4px;
 }
 
 .nav-top {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     color: var(--maintextcolor);
-    gap: 2rem;
+    gap: 1.5rem;
+    width: 100%;
+    background: var(--mainbgcolor);
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px -2px rgb(0, 0, 0);
 }
 
 .nav-profile {
@@ -212,12 +228,24 @@ body {
 
 #nav-username {
     font-size: 1.2rem;
-    color: white;
+    color: var(--maintextcolor);
+    cursor: pointer;
+    transition: .3s;
+}
+
+#nav-username:hover {
+    color: var(--mainhovertextcolor);
+    transition: .3s;
 }
 
 #nav-user-pfp {
-    width: 4rem;
+    width: 3.5rem;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.friends-icon {
+    width: 2rem;
 }
 
 .nav-bottom {
@@ -235,6 +263,8 @@ body {
     height: 100%;
     background: var(--mainbgcolor);
     padding: 10px;
+    border-right: 1px solid gray;
+    margin-left: 2rem;
 }
 
 
@@ -264,6 +294,113 @@ body {
     
     .gmail-auth-div {
         font-size: 1.75rem;
+    }
+
+    /*chatroom*/
+    #chatroom-wrapper {
+        justify-content: start;
+        align-items: center;
+    }
+    
+    /*chatroom nav container*/
+    #chatroom-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+        width: 15%;
+        height: 100%;
+        background: rgb(54, 54, 54);
+        padding: 10px;
+        box-shadow: 15px 0 30px 5px #1b1b1b;
+        position: relative;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    nav a {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    #chatroom-nav a {
+        color: var(--maintextcolor);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        transition: .3s;
+    }
+    
+    #chatroom-nav a:hover {
+        transition: .3s;
+        color: var(--mainhovertextcolor);
+    }
+    
+    .nav-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--maintextcolor);
+        gap: 1.5rem;
+        width: 100%;
+        background: var(--mainbgcolor);
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 0 0 15px -2px rgb(0, 0, 0);
+    }
+    
+    .nav-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    #nav-username {
+        font-size: 1.2rem;
+        color: var(--maintextcolor);
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    #nav-username:hover {
+        color: var(--mainhovertextcolor);
+        transition: .3s;
+    }
+    
+    #nav-user-pfp {
+        width: 3.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .nav-bottom {
+        display: flex;
+        justify-content: center;
+        color: var(--maintextcolor);
+    }
+    
+    /*chat messages container*/
+    #chat-container {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 70%;
+        height: 100%;
+        background: var(--mainbgcolor);
+        padding: 10px;
+        border-right: 1px solid gray;
+        margin-left: 2rem;
     }
 }
 
