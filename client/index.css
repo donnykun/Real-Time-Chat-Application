@@ -103,7 +103,7 @@
     gap: 15px;
 }
 
-.gmail-auth-div {
+#gmail-auth-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,12 +117,12 @@
     font-size: .9rem;
 }
 
-.gmail-auth-div:hover {
+#gmail-auth-button:hover {
     background: rgb(78, 78, 78);
     transition: .3s;
 }
 
-.gmail-auth-div img {
+#gmail-auth-button img {
     width: 1.3rem;
 }
 
@@ -292,7 +292,7 @@ nav a {
         font-size: 1.5rem;
     }
     
-    .gmail-auth-div {
+    #gmail-auth-button {
         font-size: 1.75rem;
     }
 
