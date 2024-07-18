@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="/client/index.css">
     <script src="/client/index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js" integrity="sha512-11t8Q+vY9JlCrr+PveZKTYJq8n7O09Y5X/pk/aMd3vJugSvu4xOunGEUzaADqL3I8cZKE/pBwwCfXzDkRJh2sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/client/chat.js" defer></script>
     <script src="https://kit.fontawesome.com/c1b15e9f35.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,12 +26,17 @@
             <div class="nav-bottom">
                 <nav>
                     <a href=""><i class="fa-solid fa-gear"></i> Settings</a>
-                    <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</a>
                 </nav>
             </div>
         </aside>
         <section id="chat-container">
+            <ul>
                 
+            </ul>
+            <form>
+                <input type="text" placeholder="Enter a message!">
+                <button>Send</button>
+            </form>
         </section>
         <aside id="online-users-container">
             

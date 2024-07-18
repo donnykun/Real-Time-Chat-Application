@@ -258,13 +258,92 @@ nav a {
 /*chat messages container*/
 #chat-container {
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 70%;
     height: 100%;
     background: var(--mainbgcolor);
-    padding: 1rem;
+    padding: .5rem;
     border-right: 1px solid gray;
+}
+
+#chat-container ul {
+    padding: 1.5rem;
+    width: 100%;
+    flex-grow: 1; 
+    overflow-y: auto;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#chat-container ul li {
+    margin-bottom: 12px;
+}
+
+#chat-container form {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: auto;
+}
+
+#chat-container form input {
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 8px;
+    background: rgb(63, 63, 63);
+    color: rgb(209, 209, 209);
+    outline: none;
+    border: 1px solid gray;
+}
+
+#chat-container form input:focus {
+    border: 1px solid rgb(202, 202, 202);
+}
+
+#chat-container input::placeholder {
+    color: rgb(139, 139, 139);
+}
+
+#chat-container form button {
+    padding: .5rem 3rem;
+    border-radius: 8px;
+    background: rgb(63, 63, 63);
+    outline: none;
+    border: 1px solid gray;
+    color: rgb(139, 139, 139);
+}
+
+#chat-container form button:hover {
+    cursor: pointer;
+    background: rgb(82, 82, 82);
+    color: rgb(196, 196, 196);
+}
+
+
+.message-card {
+    background: rgb(49, 49, 49);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 6px;
+    list-style: none;
+}
+
+.message-card:hover {
+    background: rgb(32, 32, 32);
+}
+
+.client-id {
+    color: rgb(207, 130, 29);
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.message-text {
+    color: rgb(255, 255, 255);
 }
 
 
@@ -522,6 +601,23 @@ nav a {
 @font-face{
     font-family: 'poppins';
     src: url(/assets/Poppins-Regular.otf);
+}
+
+/* chatbox scrollbar*/
+#chat-container ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-container ul::-webkit-scrollbar-thumb{
+    background-color: rgb(213, 213, 213);
+}
+
+#chat-container ul::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(164, 164, 164) ;
+}
+
+#chat-container ul::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.179);
 }
 
 
